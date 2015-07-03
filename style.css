@@ -1,0 +1,102 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	background-color: #F7FAFD;
+	font-family: Kepler, Kepler Std, Helvetica Neue;
+	padding: 2em;
+	margin: 0;
+}
+
+.header h1 {
+	font-size: 4.2em;
+	line-height: 0.85;
+	font-weight: 900;
+	margin: 0;
+}
+
+.header h1 > span {
+	font-style: italic;
+	font-weight: 100;
+}
+
+.header h3 {
+	font-family: Helvetica;
+	font-weight: 400;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.flexbox .col {
+  flex: 1;
+  -webkit-flex: 1;
+	padding: 0px;
+	box-sizing: padding-box;
+	margin: 0;
+	background-color: #eee;
+	text-align: center;
+}
+
+.col img{
+	max-width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	max-height: 100vh;
+}
+
+.desc{
+	padding: 50px;
+}
+
+.col h3{
+	font-size: 1.4em;
+	margin: 0;
+}
+
+.col p {
+	margin: 0px auto 18px auto;
+	max-width: 400px;
+	font-family: "More Pro", "Coranto-2", serif;
+	text-align: left;
+	line-height: 1.6;
+	padding: 0em 2em;
+}
+
+.col blockquote {
+	font-family: "More Pro";
+	font-style: italic;
+	font-size: 1.6em;
+	max-width: 600px;
+}
+
+.col hr {
+	width: 90px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.flexbox .col:nth-child(1) {
+  background: #000;
+  order: 0;
+}
+.flexbox .col:nth-child(2) {
+  background: #fff;
+  order: 1;
+}
+
+@media screen and (max-width: 900px) {
+	
+	.flexbox{
+	flex-direction: column;
+	}
+	
+}
