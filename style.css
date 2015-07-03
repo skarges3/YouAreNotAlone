@@ -96,7 +96,7 @@ body, html {
 @media screen and (max-width: 900px) {
 	
 	.flexbox{
-	flex-direction: column;
+	-webkit-flex-direction: column;
 	}
 	
 }
