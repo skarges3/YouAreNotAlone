@@ -5,16 +5,18 @@ body, html {
 
 .header {
 	background-color: #F7FAFD;
-	font-family: 'Playfair Display', serif;;
-	padding: 2em;
-	margin: 0;
+	background-image: url(http://www.transparenttextures.com/patterns/absurdity.png);
+	font-family: 'Playfair Display', serif;
+/*	padding: 4em 2em;*/
+	margin: 0 auto;
 }
 
 .header h1 {
 	font-size: 4.2em;
 	line-height: 0.85;
 	font-weight: 900;
-	margin: 0;
+	margin: 10px auto;
+	display: block;
 }
 
 .header h1 > span {
@@ -25,6 +27,12 @@ body, html {
 .header h3 {
 	font-family: Helvetica Neue, Helvetica;
 	font-weight: 400;
+	margin-bottom: 40px;
+}
+
+p {
+	font-family: Libre Baskerville, "Libre Baskerville", serif;
+	max-width: 600px;
 }
 
 .flexbox {
@@ -46,6 +54,10 @@ body, html {
 	text-align: center;
 }
 
+.col.intro {
+	background-color: transparent;
+}
+
 .col img{
 	max-width: 100%;
 	padding: 0;
@@ -55,6 +67,14 @@ body, html {
 
 .desc{
 	padding: 50px;
+}
+
+.col.desc {
+	background-color: #fff;
+}
+
+.col.portrait {
+	background-color: #000;
 }
 
 .col h3{
@@ -78,25 +98,62 @@ body, html {
 	max-width: 600px;
 }
 
-.col hr {
+hr {
 	width: 90px;
 	margin-top: 40px;
 	margin-bottom: 30px;
+	box-shadow: none;
+	border: none;
+	border-top: 1px solid #bbb;
 }
 
 .flexbox .col:nth-child(1) {
-  background: #000;
   order: 0;
 }
+
 .flexbox .col:nth-child(2) {
-  background: #fff;
   order: 1;
+}
+
+.flexbox .col:nth-child(3) {
+  order: 2;
+}
+
+.flexbox #putthisfirst {
+  order: 0;
+}
+
+.flexbox #putthissecond {
+  order: 1;
+}
+
+.col.title {
+	background-color: transparent;
+}
+
+#title {
+	padding: 3em;
+}
+
+div.separator {
+	height: 20px;
+	background-color: #F7FAFD;
+	background-image: url(http://www.transparenttextures.com/patterns/absurdity.png);
+	font-family: 'Playfair Display', serif;
 }
 
 @media screen and (max-width: 900px) {
 	
 	.flexbox{
 	-webkit-flex-direction: column;
+	}
+	
+	.flexbox #putthisfirst {
+  order: 1;
+	}
+
+	.flexbox #putthissecond {
+		order: 0;
 	}
 	
 }
