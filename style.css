@@ -5,7 +5,7 @@ body, html {
 
 .header {
 	background-color: #F7FAFD;
-	font-family: Kepler, Kepler Std, Helvetica Neue;
+	font-family: 'Playfair Display', serif;;
 	padding: 2em;
 	margin: 0;
 }
@@ -23,7 +23,7 @@ body, html {
 }
 
 .header h3 {
-	font-family: Helvetica;
+	font-family: Helvetica Neue, Helvetica;
 	font-weight: 400;
 }
 
@@ -65,14 +65,14 @@ body, html {
 .col p {
 	margin: 0px auto 18px auto;
 	max-width: 400px;
-	font-family: "More Pro", "Coranto-2", serif;
+	font-family: Libre Baskerville, "Libre Baskerville", serif;
 	text-align: left;
 	line-height: 1.6;
 	padding: 0em 2em;
 }
 
 .col blockquote {
-	font-family: "More Pro";
+	font-family: Libre Baskerville, "Libre Baskerville", serif;
 	font-style: italic;
 	font-size: 1.6em;
 	max-width: 600px;
