@@ -96,6 +96,8 @@ p {
 	font-style: italic;
 	font-size: 1.6em;
 	max-width: 600px;
+	margin: 20px auto;
+	padding: 0.4em 0.6em;
 }
 
 hr {
